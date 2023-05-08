@@ -1,0 +1,10 @@
+Projeto Pobredim
+Estilos:
+
+
+Cores:
+Usuário - #a0b4b7,  #d9e5e7, #bfd3d6
+
+Página Home:
+A página Home conterá a tela inicial do aplicativo e terá os seguintes campos:
+Um header, com a imagem do usuário, um campo de busca e um campo de mensagens.

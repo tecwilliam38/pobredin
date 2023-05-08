@@ -1,0 +1,416 @@
+
+
+modelo js
+// 20230502141231
+// https://randomuser.me/api/?page=1&results=5&seed=abc
+
+// export interface IpcData{
+//     gender: string;
+//     name: {
+//         title: string;
+//         first: string;
+//         last: string
+//     },
+//     email: string;
+//     login: {
+//         uuid: string;
+//         username: string;
+//         password: string;
+//         salt: string;
+//         md5: string;
+//         sha1: string;
+//         sha256: string;
+// }
+// }
+
+export const pcData = [
+    {
+        gender: "female",
+        name: {
+            title: "Miss",
+            first: "Laura",
+            last: "Woods"
+        },
+        email: "laura.woods@example.com",
+        login: {
+            uuid: "9f07341f-c7e6-45b7-bab0-af6de5a4582d",
+            username: "angryostrich988",
+            password: "racers",
+            salt: "B5ywSDUM",
+            md5: "2eefb6307df2a5fb1f91c6b968dc905b",
+            sha1: "33cbf1e97a31e14c87fb18c481d1f6d958c76cbd",
+            sha256: "83e0c89668c8b6131df0c70fc4bb9abb8831e0ff97a0a29cdfa3949dd5afd491"
+        },
+    },
+    {
+        gender: "male",
+        name: {
+            title: "Mr",
+            first: "Marten",
+            last: "Faber"
+        },
+        email: "marten.faber@example.com",
+        login: {
+            uuid: "1cd1e622-12bb-4b35-a2c9-63ff7bda6c73",
+            username: "yellowfish737",
+            password: "krusty",
+            salt: "CQZQxXDl",
+            md5: "c875e08220708016989470d12ba1175f",
+            sha1: "48f118f603294a09a5cd30b93bca9b08d5abcae5",
+            sha256: "2daf436e8b7cd276eaedfd06ced8a8e1938fae2015fb775ac20490d9a92ec3a1"
+        },
+    },
+    {
+        gender: "female",
+        name: {
+            title: "Miss",
+            first: "Christy",
+            last: "Diaz"
+        },
+        email: "christy.diaz@example.com",
+        login: {
+            uuid: "4b400301-d696-4618-862e-8a673f80e334",
+            username: "happywolf771",
+            password: "softball",
+            salt: "npdL2iHP",
+            md5: "2d6ec889c9d7a59d6e5b3405a8b36be7",
+            sha1: "d526c003ba877f5b6489c032afb6864b72eb19a8",
+            sha256: "bd24acc8ac0eb918bc4b1cc006bf893b0c5eb28aec7a41982c439eb631010f5e"
+        },
+    },
+    {
+        gender: "female",
+        name: {
+            title: "Mrs",
+            first: "Naomi",
+            last: "Ortiz"
+        },
+        email: "naomi.ortiz@example.com",
+        login: {
+            uuid: "679d3319-d28a-4d6f-baf8-bde50a8a2edd",
+            username: "lazypanda577",
+            password: "glory",
+            salt: "P1LGDDoE",
+            md5: "278c4ba61108435c37ef27e3f367f906",
+            sha1: "43c1576b7334ff8ec5b30a95800fd2120ed205c1",
+            sha256: "8b85fb9f53f0b8776f5532cbd6c111a299ef7436569ccb90d1e2b31581406df7"
+        },
+    },
+    {
+        gender: "female",
+        name: {
+            title: "Miss",
+            first: "Emeline",
+            last: "Carpentier"
+        },
+        email: "emeline.carpentier@example.com",
+        login: {
+            uuid: "b7e527c8-3ca5-430c-ba83-711d6ad98773",
+            username: "blackwolf663",
+            password: "abbott",
+            salt: "APCg6XyM",
+            md5: "4b17027e9973a8b6de610f4e01d7f955",
+            sha1: "0630fc82f431d2c5d675e77eea979b4bf18be981",
+            sha256: "9a6c1fce54e92d38f322e835ee9ffab85e4dc0861221248435f8b948304a30ed"
+        },
+    }
+]
+
+
+modelo web
+
+// 20230502141231
+// https://randomuser.me/api/?page=1&results=5&seed=abc
+
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Laura",
+        "last": "Woods"
+      },
+      "location": {
+        "street": {
+          "number": 2479,
+          "name": "Henry Street"
+        },
+        "city": "Blessington",
+        "state": "Wexford",
+        "country": "Ireland",
+        "postcode": 78276,
+        "coordinates": {
+          "latitude": "2.0565",
+          "longitude": "95.2422"
+        },
+        "timezone": {
+          "offset": "+1:00",
+          "description": "Brussels, Copenhagen, Madrid, Paris"
+        }
+      },
+      "email": "laura.woods@example.com",
+      "login": {
+        "uuid": "9f07341f-c7e6-45b7-bab0-af6de5a4582d",
+        "username": "angryostrich988",
+        "password": "racers",
+        "salt": "B5ywSDUM",
+        "md5": "2eefb6307df2a5fb1f91c6b968dc905b",
+        "sha1": "33cbf1e97a31e14c87fb18c481d1f6d958c76cbd",
+        "sha256": "83e0c89668c8b6131df0c70fc4bb9abb8831e0ff97a0a29cdfa3949dd5afd491"
+      },
+      "dob": {
+        "date": "1967-07-23T09:18:33.666Z",
+        "age": 55
+      },
+      "registered": {
+        "date": "2018-10-18T04:05:51.990Z",
+        "age": 4
+      },
+      "phone": "031-623-5189",
+      "cell": "081-807-8083",
+      "id": {
+        "name": "PPS",
+        "value": "1101776T"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/88.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/88.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/88.jpg"
+      },
+      "nat": "IE"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Marten",
+        "last": "Faber"
+      },
+      "location": {
+        "street": {
+          "number": 6167,
+          "name": "Grüner Weg"
+        },
+        "city": "Falkenberg/Elster",
+        "state": "Thüringen",
+        "country": "Germany",
+        "postcode": 99553,
+        "coordinates": {
+          "latitude": "89.4367",
+          "longitude": "135.6354"
+        },
+        "timezone": {
+          "offset": "+5:45",
+          "description": "Kathmandu"
+        }
+      },
+      "email": "marten.faber@example.com",
+      "login": {
+        "uuid": "1cd1e622-12bb-4b35-a2c9-63ff7bda6c73",
+        "username": "yellowfish737",
+        "password": "krusty",
+        "salt": "CQZQxXDl",
+        "md5": "c875e08220708016989470d12ba1175f",
+        "sha1": "48f118f603294a09a5cd30b93bca9b08d5abcae5",
+        "sha256": "2daf436e8b7cd276eaedfd06ced8a8e1938fae2015fb775ac20490d9a92ec3a1"
+      },
+      "dob": {
+        "date": "1960-08-01T11:13:57.264Z",
+        "age": 62
+      },
+      "registered": {
+        "date": "2002-04-03T08:57:47.321Z",
+        "age": 21
+      },
+      "phone": "0100-8354415",
+      "cell": "0172-4195644",
+      "id": {
+        "name": "SVNR",
+        "value": "18 010860 F 495"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/1.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/1.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/1.jpg"
+      },
+      "nat": "DE"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Christy",
+        "last": "Diaz"
+      },
+      "location": {
+        "street": {
+          "number": 5171,
+          "name": "Karen Dr"
+        },
+        "city": "Hobart",
+        "state": "South Australia",
+        "country": "Australia",
+        "postcode": 2104,
+        "coordinates": {
+          "latitude": "3.9825",
+          "longitude": "176.6213"
+        },
+        "timezone": {
+          "offset": "+6:00",
+          "description": "Almaty, Dhaka, Colombo"
+        }
+      },
+      "email": "christy.diaz@example.com",
+      "login": {
+        "uuid": "4b400301-d696-4618-862e-8a673f80e334",
+        "username": "happywolf771",
+        "password": "softball",
+        "salt": "npdL2iHP",
+        "md5": "2d6ec889c9d7a59d6e5b3405a8b36be7",
+        "sha1": "d526c003ba877f5b6489c032afb6864b72eb19a8",
+        "sha256": "bd24acc8ac0eb918bc4b1cc006bf893b0c5eb28aec7a41982c439eb631010f5e"
+      },
+      "dob": {
+        "date": "1982-11-05T12:29:00.723Z",
+        "age": 40
+      },
+      "registered": {
+        "date": "2021-11-29T02:24:48.253Z",
+        "age": 1
+      },
+      "phone": "07-8830-6561",
+      "cell": "0488-834-749",
+      "id": {
+        "name": "TFN",
+        "value": "314751863"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/53.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/53.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/53.jpg"
+      },
+      "nat": "AU"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Mrs",
+        "first": "Naomi",
+        "last": "Ortiz"
+      },
+      "location": {
+        "street": {
+          "number": 4700,
+          "name": "Camden Ave"
+        },
+        "city": "Bathurst",
+        "state": "Victoria",
+        "country": "Australia",
+        "postcode": 9156,
+        "coordinates": {
+          "latitude": "52.7455",
+          "longitude": "6.1478"
+        },
+        "timezone": {
+          "offset": "-6:00",
+          "description": "Central Time (US & Canada), Mexico City"
+        }
+      },
+      "email": "naomi.ortiz@example.com",
+      "login": {
+        "uuid": "679d3319-d28a-4d6f-baf8-bde50a8a2edd",
+        "username": "lazypanda577",
+        "password": "glory",
+        "salt": "P1LGDDoE",
+        "md5": "278c4ba61108435c37ef27e3f367f906",
+        "sha1": "43c1576b7334ff8ec5b30a95800fd2120ed205c1",
+        "sha256": "8b85fb9f53f0b8776f5532cbd6c111a299ef7436569ccb90d1e2b31581406df7"
+      },
+      "dob": {
+        "date": "1990-06-15T14:38:36.043Z",
+        "age": 32
+      },
+      "registered": {
+        "date": "2020-10-16T05:17:50.555Z",
+        "age": 2
+      },
+      "phone": "04-7729-3793",
+      "cell": "0440-046-672",
+      "id": {
+        "name": "TFN",
+        "value": "717445923"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/10.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/10.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/10.jpg"
+      },
+      "nat": "AU"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Emeline",
+        "last": "Carpentier"
+      },
+      "location": {
+        "street": {
+          "number": 1700,
+          "name": "Rue de la Fontaine"
+        },
+        "city": "Clermont-Ferrand",
+        "state": "Haute-Garonne",
+        "country": "France",
+        "postcode": 88079,
+        "coordinates": {
+          "latitude": "-18.3929",
+          "longitude": "-5.5054"
+        },
+        "timezone": {
+          "offset": "+3:00",
+          "description": "Baghdad, Riyadh, Moscow, St. Petersburg"
+        }
+      },
+      "email": "emeline.carpentier@example.com",
+      "login": {
+        "uuid": "b7e527c8-3ca5-430c-ba83-711d6ad98773",
+        "username": "blackwolf663",
+        "password": "abbott",
+        "salt": "APCg6XyM",
+        "md5": "4b17027e9973a8b6de610f4e01d7f955",
+        "sha1": "0630fc82f431d2c5d675e77eea979b4bf18be981",
+        "sha256": "9a6c1fce54e92d38f322e835ee9ffab85e4dc0861221248435f8b948304a30ed"
+      },
+      "dob": {
+        "date": "1944-09-22T13:59:04.000Z",
+        "age": 78
+      },
+      "registered": {
+        "date": "2018-09-08T06:32:34.414Z",
+        "age": 4
+      },
+      "phone": "04-19-13-94-56",
+      "cell": "06-12-79-57-10",
+      "id": {
+        "name": "INSEE",
+        "value": "2440838872460 05"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/95.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/95.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/95.jpg"
+      },
+      "nat": "FR"
+    }
+  ],
+  "info": {
+    "seed": "abc",
+    "results": 5,
+    "page": 1,
+    "version": "1.4"
+  }
+}
+
+
