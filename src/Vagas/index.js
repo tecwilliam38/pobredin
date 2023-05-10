@@ -17,10 +17,10 @@ const VagasScreen = ({ navigation }) => {
                 <HeaderScreen />
                 <View style={gridStyle}>
                     <View style={cardBody}>
-                        <Text style={{textAlign:"center",buttonText}}>Vagas</Text>
+                        <Text style={[buttonText,{textAlign:"center", color:"#000"}]}>Vagas disponíveis</Text>
                         <TouchableOpacity
                             style={touchableStyle}
-                            onPress={() => navigation.goBack()}>
+                            onPress={() => navigation.navigate('Home')}>
                             <LinearGradient
                                 colors={["#48F10E", "#078716", "#093203"]}
                                 style={button}

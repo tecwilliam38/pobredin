@@ -14,13 +14,14 @@ const Profile = ({ navigation }) => {
     return (
         <>
             <View style={bgStyle}>
-                {/* <ImageBackground source={bg} style={bgStyle} resizeMethod="resize"> */}
-                <HeaderScreen />
+                 <HeaderScreen />
                 <View style={gridStyle}>
                     <View style={cardBody}>
+                    <Text style={[buttonText,{alignItems:'center',textAlign:'center', color:"#000"}]}>Perfil do usuário</Text>
+                        
                         <TouchableOpacity
                             style={touchableStyle}
-                            onPress={() => navigation.goBack()}>
+                            onPress={() => navigation.navigate('Home')}>
                             <LinearGradient
                                 colors={["#48F10E", "#078716", "#093203"]}
                                 style={button}

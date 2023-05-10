@@ -15,9 +15,7 @@ const CssLocal = StyleSheet.create({
         marginTop:20,
         alignItems:'center',
         height:'60%',
-        borderColor:"#ccc",
-        borderWidth:2,
-    },
+     },
     userImage:{
         width:45,
         height:45,

@@ -17,14 +17,13 @@ const Notifications = ({ navigation }) => {
                 <HeaderScreen />
                 <View style={gridStyle}>
                     <View style={cardBody}>
-                        <Text style={{alignItems:'center',textAlign:'center',buttonText}}>Notificações</Text>
+                        <Text style={[buttonText, { alignItems: 'center', textAlign: 'center', color: "#000" }]}>Notificações</Text>
                         <TouchableOpacity
                             style={touchableStyle}
-                            onPress={() => navigation.goBack()}>
+                            onPress={() => navigation.navigate('Home')}>
                             <LinearGradient
                                 colors={["#48F10E", "#078716", "#093203"]}
-                                style={button}
-                            >
+                                style={button}>
                                 <Text style={buttonText}>Voltar</Text>
                             </LinearGradient>
                         </TouchableOpacity>
